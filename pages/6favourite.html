@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+
+    <title>Посмотреть позже</title>
+    <style>
+        .carousel-container {
+            display: flex;
+            overflow-x: hidden; 
+            width: 100%; 
+            max-width: 1000px; 
+            height: 200px; 
+            padding: 10px 0;
+            position: relative;
+        }
+
+        .carousel-content{
+            padding: 60px 40px;
+        }
+
+        .carousel-item {
+            flex: 0 0 auto;
+            width: 200px; 
+            margin-right: 10px; 
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .movie-title {
+            margin-bottom: 5px;
+        }
+
+        .movie-date {
+            color: #888;
+        }
+
+        .add-movie-container {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .add-movie-input {
+            margin-right: 10px;
+            padding: 5px;
+            box-sizing: border-box; 
+        }
+
+        .add-movie-button {
+            padding: 8px 15px;
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .add-movie-button:hover {
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <div>
+                    <a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/1home.html" class="logo">MovieNight</a>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <button class="btn-log"><a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/2login.html">Выйти</a></button>
+            </div>
+
+        </div>
+    </header>
+    <div class="content">
+        <aside class="aside">
+            <nav class="nav">
+                <ul>
+                    <li><a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/1home.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/8films.html"><i class="fas fa-film"></i> Фильмы</a></li>
+                    <li><a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/7serials.html"><i class="fas fa-tv"></i> Сериалы</a></li>
+                    <li><a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/6favourite.html"><i class="fas fa-star"></i> Фавориты</a></li>
+                    <li><a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/5search.html"><i class="fas fa-search"></i> Поиск</a></li>
+                    <li><a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/3about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                    <li><a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/10news.html"><i class="fas fa-newspaper"></i> Новости</a></li>
+                    <li><a href="file:///C:/Users/Acer/Desktop/рубежка27/pages/4calc.html"><i class="fas fa-calculator"></i> Калькулятор</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="carousel-content">
+            <h2>Сюда вы можете добавить фильмы, которые хотите посмотреть потом</h2>
+            <br>
+            <div class="carousel-container" id="carouselContainer">
+            </div>
+
+            <div class="add-movie-container">
+                <input type="text" id="movieInput" class="add-movie-input" placeholder="Введите фильмы для просмотра позже">
+                <button onclick="addMovie()" class="add-movie-button">Добавить фильм</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/6favourite.js"> </script>
+    <script src="../javascript/animate.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Регистрация и Вход</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+
+            <form>
+                <h1>Регистрация</h1>
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="Почта">
+                <input type="password" placeholder="Пароль">
+                <button>Зарегистрироваться</button>
+            </form>
+
+        </div>
+
+        <div class="form-container sign-in">
+            <form>
+                <h1>Вход</h1>
+                <input type="email" placeholder="Почта">
+                <input type="password" placeholder="Пароль">
+                <button>Войти</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Здравствуйте</h1>
+                    <p>есть аккаунт?</p>
+                    <button class="hidden" id="login">Войти</button>
+                </div>
+
+                <div class="toggle-panel toggle-right">
+                    <h1>Здравствуйте</h1>
+                    <p>нет аккаунта?</p>
+                    <button class="hidden" id="register">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="../javascript/2login.js"></script>
+</body>
+
+</html>
+
